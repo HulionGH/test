@@ -21,7 +21,7 @@ const devServer = (isDev) =>
 const esLintPlugin = (isDev) => [
   new EslintPlugin({
     extensions: ['ts', 'js'],
-    emitWarning: isDev ? false : true,
+    emitWarning: false,
   }),
 ];
 //devtool: development ? 'inline-source-map' : 'none',
