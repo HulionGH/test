@@ -1,0 +1,171 @@
+<main class="tree__wrapper d-flex flex-row justify-content-between">
+  <section class="tree-area d-flex flex-column">
+    <div class="wrap__set-joy d-flex flex-row">
+      <div class="menu__btn btn-volume"></div>
+      <div class="menu__btn btn-snow"></div>
+    </div>
+    <div class="wrap__set-tree d-flex flex-column">
+      <p class="set-title uppercase">Выберите ёлку</p>
+      <div class="tree-container">
+        <div class="wrap-item align-items-center">
+          <div class="tree-item" id="first-tree"></div>
+        </div>
+        <div class="wrap-item align-items-center">
+          <div class="tree-item" id="second-tree"></div>
+        </div>
+        <div class="wrap-item align-items-center">
+          <div class="tree-item" id="third-tree"></div>
+        </div>
+        <div class="wrap-item align-items-center">
+          <div class="tree-item" id="fourth-tree"></div>
+        </div>
+        <div class="wrap-item align-items-center">
+          <div class="tree-item" id="fifth-tree"></div>
+        </div>
+        <div class="wrap-item align-items-center">
+          <div class="tree-item" id="sixth-tree"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap__set-backdrop d-flex flex-column">
+      <p class="set-title uppercase">Выберите фон</p>
+      <div class="backdrop-container">
+        <div class="backdrop-item"></div>
+        <div class="backdrop-item"></div>
+        <div class="backdrop-item"></div>
+        <div class="backdrop-item"></div>
+        <div class="backdrop-item"></div>
+        <div class="backdrop-item"></div>
+        <div class="backdrop-item"></div>
+        <div class="backdrop-item"></div>
+        <div class="backdrop-item"></div>
+        <div class="backdrop-item"></div>
+        <div class="backdrop-item"></div>
+      </div>
+    </div>
+
+    <div class="wrap__set-lights d-flex flex-column">
+      <p class="set-title uppercase">Гирлянды</p>
+      <div class="lights-container">
+        <div
+          class="garland-item flashing d-flex flex-row justify-content-between"
+        >
+          <p class="uppercase">Фонарики</p>
+          <div class="flashlight"></div>
+        </div>
+        <div
+          class="garland-item twinkle-green d-flex flex-row align-items-center"
+        >
+          <p class="uppercase">Мерцающая</p>
+          <div class="diod green"></div>
+          <div class="diod blue"></div>
+        </div>
+        <div
+          class="garland-item pulsing-yellow d-flex flex-row align-items-center"
+        >
+          <p class="uppercase">Пульсирующая</p>
+          <div class="diod yellow"></div>
+          <div class="diod yellow"></div>
+        </div>
+        <div class="garland-item d-flex flex-row align-items-center hidden">
+          <p class="uppercase">Выбери цвет</p>
+          <div class="diod choose-color green"></div>
+          <div class="diod choose-color blue"></div>
+          <div class="diod choose-color yellow"></div>
+          <div class="diod choose-color red"></div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-row justify-content-between">
+      <button class="save-tree button-style">Сохранить елку</button>
+      <button class="reset-tree button-style">Сбросить настройки</button>
+    </div>
+  </section>
+  <section class="decorate-area d-flex align-items-center">
+    <div class="decorate-tree">
+      <div class="garland-container hidden">
+        <div
+          class="garland-one garland-line d-flex flex-row justify-content-between"
+        >
+          <div class="diod"></div>
+          <div class="diod"></div>
+        </div>
+        <div
+          class="garland-two garland-line d-flex flex-row justify-content-between"
+        >
+          <div class="diod"></div>
+          <div class="diod"></div>
+          <div class="diod"></div>
+        </div>
+        <div
+          class="garland-three garland-line d-flex flex-row justify-content-between"
+        >
+          <div class="diod"></div>
+          <div class="diod"></div>
+          <div class="diod"></div>
+          <div class="diod"></div>
+        </div>
+        <div
+          class="garland-four garland-line d-flex flex-row justify-content-between"
+        >
+          <div class="diod"></div>
+          <div class="diod"></div>
+          <div class="diod"></div>
+          <div class="diod"></div>
+          <div class="diod"></div>
+          <div class="diod"></div>
+        </div>
+        <div
+          class="garland-five garland-line d-flex flex-row justify-content-between"
+        >
+          <div class="diod"></div>
+          <div class="diod"></div>
+          <div class="diod"></div>
+          <div class="diod"></div>
+          <div class="diod"></div>
+          <div class="diod"></div>
+          <div class="diod"></div>
+        </div>
+        <div
+          class="garland-six garland-line d-flex flex-row justify-content-between"
+        >
+          <div class="diod"></div>
+          <div class="diod"></div>
+          <div class="diod"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="toys-area d-flex flex-column">
+    <div class="wrap__set-toys d-flex flex-column">
+      <p class="set-title uppercase">игрушки</p>
+      <div class="toys-container"></div>
+    </div>
+    <div class="wrap__savings d-flex flex-column">
+      <p class="set-title uppercase">Вы нарядили</p>
+      <p class="instructions">
+        <i>
+          Чтобы добавить результат в галерею - примените стили и нажмите
+          "сохранить елку"
+        </i>
+      </p>
+      <div class="saved-container"></div>
+    </div>
+  </section>
+</main>
+<template class="temp-toy">
+  <div class="wrap-item">
+    <div draggable="true" class="selected-toy"></div>
+    <div
+      class="selected-toy-count d-flex justify-content-center align-items-center"
+    ></div>
+  </div>
+</template>
+<template class="saved-tree">
+  <div class="wrap-item">
+    <div class="chosen-bg d-flex justify-content-center align-items-center">
+      <div class="chosen-tree"></div>
+    </div>
+  </div>
+</template>
+<canvas id="canvas" class="canvas-container hidden"></canvas>

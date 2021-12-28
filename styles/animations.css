@@ -1,0 +1,82 @@
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 0.85, 0.95);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pulsing {
+  opacity: 1;
+  animation: pulse 0.9s both ease-in-out infinite;
+}
+.rotating {
+  opacity: 1;
+  animation: rotating 10s linear infinite;
+}
+
+.snowing {
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.snowing:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/snow.png"), url("../assets/snow2.png"),
+    url("../assets/snow3.png");
+  background-repeat: repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  will-change: background-position;
+
+  -webkit-animation: an-snow 20s linear infinite;
+  -moz-animation: an-snow 20s linear infinite;
+  -o-animation: an-snow 20s linear infinite;
+  animation: an-snow 20s linear infinite;
+}
+
+@-webkit-keyframes an-snow {
+  100% {
+    background-position: 500px 1000px, 300px 300px, -400px 400px;
+  }
+}
+@-moz-keyframes an-snow {
+  100% {
+    background-position: 500px 1000px, 300px 300px, -400px 400px;
+  }
+}
+@-o-keyframes an-snow {
+  100% {
+    background-position: 500px 1000px, 300px 300px, -400px 400px;
+  }
+}
+@keyframes an-snow {
+  100% {
+    background-position: 500px 1000px, 300px 300px, -400px 400px;
+  }
+}

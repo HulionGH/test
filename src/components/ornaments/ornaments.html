@@ -1,0 +1,168 @@
+<main class="ornaments__wrapper d-flex flex-row">
+  <section class="settings__wrapper d-flex flex-column">
+    <div class="menu__wrapper d-flex flex-row">
+      <div class="menu__btn btn-volume"></div>
+      <div class="menu__btn btn-snow"></div>
+      <div class="menu__search-box d-flex flex-row align-items-center">
+        <input class="search-txt" type="text" name="" placeholder="Search" />
+        <a class="search-btn" href="#"></a>
+      </div>
+    </div>
+    <div class="menu__wrapper d-flex flex-row">
+      <div>
+        <h4 class="menu__title uppercase">Сортировать</h4>
+      </div>
+      <select name="select" class="menu__sort-box">
+        <option value="year-ascending">От старых к новым</option>
+        <option value="year-descending">По новых к старым</option>
+        <option value="name-ascending">По названию от А до Я</option>
+      </select>
+    </div>
+    <div class="menu__wrapper d-flex flex-row">
+      <div>
+        <h4 class="menu__title uppercase">Категории</h4>
+      </div>
+      <div class="d-flex flex-row justify-content-between">
+        <form class="d-flex flex-row" name="radioForm">
+          <input
+            type="radio"
+            checked
+            id="show-all"
+            name="checkFav"
+            value="false"
+          />
+          <label for="show-all">Все</label>
+          <input type="radio" id="show-favorite" name="checkFav" value="true" />
+          <label for="show-favorite">Только Любимые</label>
+        </form>
+      </div>
+    </div>
+    <div class="menu__wrapper d-flex flex-column">
+      <div>
+        <h4 class="menu__title uppercase">Форма</h4>
+      </div>
+      <div
+        class="menu__forms d-flex flex-row flex-wrap justify-content-between"
+      >
+        <div class="form-item d-flex flex-column align-items-center">
+          <div
+            class="form-item__image"
+            id="form-bell"
+            data-feature="колокольчик"
+          ></div>
+          <p>Колокол</p>
+        </div>
+        <div class="form-item d-flex flex-column align-items-center">
+          <div class="form-item__image" id="form-ball" data-feature="шар"></div>
+          <p>Шар</p>
+        </div>
+        <div class="form-item d-flex flex-column align-items-center">
+          <div
+            class="form-item__image"
+            id="form-shot"
+            data-feature="шишка"
+          ></div>
+          <p>Шишка</p>
+        </div>
+        <div class="form-item d-flex flex-column align-items-center">
+          <div
+            class="form-item__image"
+            id="form-star"
+            data-feature="звезда"
+          ></div>
+          <p>Звезда</p>
+        </div>
+        <div class="form-item d-flex flex-column align-items-center">
+          <div
+            class="form-item__image"
+            id="form-snowflake"
+            data-feature="снежинка"
+          ></div>
+          <p>Снежинка</p>
+        </div>
+        <div class="form-item d-flex flex-column align-items-center">
+          <div
+            class="form-item__image"
+            id="form-figure"
+            data-feature="фигурка"
+          ></div>
+          <p>Фигурка</p>
+        </div>
+      </div>
+    </div>
+    <div class="menu__wrapper d-flex flex-column">
+      <div>
+        <h4 class="menu__title uppercase">Количество экземпляров</h4>
+      </div>
+      <div class="menu__range-bar">
+        <div class="count-range"></div>
+      </div>
+    </div>
+    <div class="menu__wrapper d-flex flex-column">
+      <div>
+        <h4 class="menu__title uppercase">Год приобретения</h4>
+      </div>
+      <div class="menu__range-bar">
+        <div class="prod-year-range"></div>
+      </div>
+    </div>
+    <div class="menu__wrapper d-flex flex-column">
+      <div>
+        <h4 class="menu__title uppercase">Цвет</h4>
+      </div>
+      <div
+        class="menu__colors d-flex flex-row flex-wrap justify-content-center"
+      >
+        <div class="color-item" id="color-white"></div>
+        <div class="color-item" id="color-yellow"></div>
+        <div class="color-item" id="color-red"></div>
+        <div class="color-item" id="color-blue"></div>
+        <div class="color-item" id="color-green"></div>
+      </div>
+    </div>
+    <div class="menu__wrapper d-flex flex-column">
+      <div>
+        <h4 class="menu__title uppercase">Размер</h4>
+      </div>
+      <div class="menu__size d-flex flex-row flex-wrap justify-content-between">
+        <div>
+          <input type="checkbox" id="show-size-big" name="size-big" />
+          <label for="show-size-big">Большой</label>
+        </div>
+        <div>
+          <input type="checkbox" id="show-size-middle" name="size-middle" />
+          <label for="show-size-middle">Средний</label>
+        </div>
+        <div>
+          <input type="checkbox" id="show-size-little" name="size-little" />
+          <label for="show-size-little">Маленький</label>
+        </div>
+      </div>
+    </div>
+    <div class="menu__wrapper d-flex flex-row justify-content-between">
+      <button class="reset-filters button-style">Сбросить фильтры</button>
+      <button class="reset-settings button-style">Сбросить настройки</button>
+    </div>
+  </section>
+
+  <section class="toys__wrapper"></section>
+</main>
+<template class="toys__item">
+  <article class="toys__item d-flex flex-column">
+    <h6 class="toys__item-name">Название</h6>
+    <div class="toys__item-image"></div>
+    <p class="toys__item-info item-count">Количество</p>
+    <p class="toys__item-info item-year-purchased">Год покупки</p>
+    <p class="toys__item-info item-shape">Форма</p>
+    <p class="toys__item-info item-color">Цвет</p>
+    <p class="toys__item-info item-size">Размер</p>
+    <p class="toys__item-info item-favorite-sign">Любимый?</p>
+    <div class="bookmark"></div>
+  </article>
+</template>
+<div class="error_wrapper hidden">
+  <div class="error_container">
+    <p class="error-message"></p>
+    <div class="close-window">Х</div>
+  </div>
+</div>
