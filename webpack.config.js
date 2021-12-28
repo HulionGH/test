@@ -82,6 +82,6 @@ module.exports = ({ development }) => ({
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     ...esLintPlugin(development),
   ],
-  watch: true,
+  watch: development,
   ...devServer(development),
 });
